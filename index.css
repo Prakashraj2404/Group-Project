@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.nav-item a{
+    text-transform: uppercase;
+}
+
 .carouselimg{
     height: 100vh;
     width: 100%;
@@ -22,7 +26,6 @@
     min-height: 100vh;
     width: 100%;
     padding: 80px 150px;
-    /* background-color: black; */
     background: url(./Images/First\ background.jpg);
     background-position: center;
     object-fit: cover;
@@ -43,24 +46,18 @@
 
 .serviceheading section:first-child h2:first-child{
     font-size: 2.5rem;
-    /* font-family: 'Dancing Script'; */
-    /* font-family: 'Pacifico'; */
     font-family:'Times New Roman', Times, serif;
-
+    font-style: italic;
 }
 
 .serviceheading section:first-child h2:first-child span{
-    /* font-family: 'Dancing Script'; */
     font-family: 'Beau Rivage', cursive;
-    /* font-style: italic; */
     font-size: 48px;
 }
 
 .services section:last-child p:first-child{
-    /* font-family: 'Dancing Script'; */
-    /* font-family: 'Beau Rivage', cursive; */
     font-family:'Times New Roman', Times, serif;
-    /* font-size: 1rem; */
+    font-style: italic;
 }
 
 .services p:first-child span{
@@ -115,12 +112,8 @@
 
 .servicetypes article:hover .aaaa{
     transition: all 1s;
-    /* transform: scale(2); */
     transform: scale(0);
-    /* transform: rotateY(80deg); */
-    /* left: -100px; */
     width: 150px;
-    /* height: 125%; */
     height: 125px;
 }
 
@@ -129,7 +122,6 @@
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    /* background-color: blue; */
 }
 
 .albums p:first-child span{
@@ -138,12 +130,12 @@
 
 .albums p:first-child~h2{
     font-family:'Times New Roman', Times, serif;
+    font-style: italic;
     font-size: 2.5rem;
 }
 
 .albums p:first-child~h2 span{
     font-family: 'Beau Rivage', cursive;
-    font-size: 48px;
 }
 
 .photoalbums article p{
@@ -157,11 +149,9 @@
     padding: 20px;
     background-color: aqua;
     border-radius: 10px;
-    /* border: 2px solid red; */
     cursor: pointer;
     color: white;
     display: flex;
-    /* justify-content: start; */
     align-items: end;
     text-align: start;
 }
@@ -173,8 +163,6 @@
 
 .photoalbums{
     display: flex;
-    /* width: 100%; */
-    /* justify-content: space-between; */
     overflow-x: scroll;
     gap: 20px;
     padding: 15px;
@@ -251,6 +239,16 @@
     width: 50%;
 }
 
+.aboutagency section:nth-child(2) div:first-child h2:first-child{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.aboutagency section:nth-child(2) div:first-child h2:first-child span{
+    font-family: 'Beau Rivage', cursive;
+}
+
 .aboutagency section:nth-child(2) div:last-child{
     display: flex;
     justify-content: end;
@@ -258,12 +256,14 @@
     padding: 10px;
 }
 
-.aboutagency section:nth-child(3){
-    display: flex;
-}
-
-.aboutagency section:nth-child(3) div{
-    width: 50%;
+.aboutagency section:nth-child(2) div:last-child button{
+    padding: 8px 20px;
+    background-color: red;
+    color: white;
+    border: unset;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .aboutagency section:nth-child(3) div:first-child img{
