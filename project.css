@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(192, 10, 10);
+}
+.nav-link{
+    font-weight: bolder;
+}
+.nav-link:hover{
+    color: green;
+}
