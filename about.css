@@ -1,3 +1,6 @@
+
+  
+
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +14,7 @@
 }
 .overall{
 min-height: 100vh;
+background-color: var(--black);
 }
 /* .nav{
     position: fixed;
@@ -24,10 +28,18 @@ min-height: 100vh;
 .image h1{
     position: absolute;
     top: 65%;
-    left: 42%;
+    left: 41%;
     color: var(--dark);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
     animation: about 2s ease-in-out;
+    
+}
+video{
+    width: 60%;
+    height: 30%;
+    margin-left: 250px;
+    margin-top: 100px;
+    animation: video 2s ease-in-out;
 }
 @keyframes about{
     0%{
@@ -39,13 +51,27 @@ min-height: 100vh;
         color: var(--red);
     }
 }
-@media screen and (max-width:800px){
+@keyframes video{
+    0%{
+        transform: translateX(-100%);
+        
+    }
+    100%{
+        transform: translateX(0%);
+        
+    }
+}
+@media screen and (min-width:320px) and (max-width:500px) {
     .image img{
         position: relative;
     }
     .image h1{
         position: absolute;
-        top: 65%;
-        left: 42%;
+        top: 28%;
+        left: 30%;
+    }
+    video{
+        margin-left: 100px;
+        margin-top: 35px;
     }
 }
