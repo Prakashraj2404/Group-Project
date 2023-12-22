@@ -285,3 +285,52 @@
     height: 100%;
     border-radius: 10px;
 }
+
+.covered{
+    height: 85vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.coveredimg{
+    height: 100%;
+    width: 74%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.covereddetails{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 175px;
+}
+
+.covereddetails nav{
+    width: 200px;
+    height: 100px;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3), 4px 4px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.covereddetails nav h3:first-child{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    margin: 0;
+}
+
+.covereddetails nav p:nth-child(2){
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+    margin: 0;
+}
