@@ -3,3 +3,38 @@
     padding:0;
     box-sizing:border-box;
 }
+
+/* Top Image  */
+.service_top_image{
+    width:90%;
+    height:60%;
+    margin:auto;
+    
+}
+.service_top_image img{
+    width:100%;
+    height:80vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(70%);
+}
+.service_top_image div h1{
+    position: absolute;
+    color:white;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+}
+/* Studio Photography */
+.service_top_second_image{
+    width:75%;
+    height:75%;
+    margin:auto;
+    margin-top: 80px;
+}
+.service_top_second_image img{
+    width:100%;
+    height:80vh;
+    object-fit: cover;
+}
