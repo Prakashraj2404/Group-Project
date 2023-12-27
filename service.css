@@ -32,9 +32,39 @@
     height:75%;
     margin:auto;
     margin-top: 80px;
+    margin-bottom: 60px;
 }
 .service_top_second_image img{
     width:100%;
     height:80vh;
     object-fit: cover;
+}
+
+/* overall */
+.overall{
+    margin:auto;
+    width:75%;
+    display: flex;
+    gap:20px;
+    /* background-color: orange; */
+}
+.overall :first-child{
+    width:30%;   
+}
+.overall a{
+    text-decoration: none;
+}
+.overall :last-child{
+    width:100%;
+}
+.overall div .studio{
+    width:100%;
+}
+.fa-check-double{
+    margin-left:50px;
+    margin-right:20px;
+}
+.overall .last{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
