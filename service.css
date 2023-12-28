@@ -68,3 +68,30 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* overall Contact section */
+
+.overall_contact{
+    width:75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.overall_contact .content{
+    width:30%;
+    
+}
+.overall_contact .form_data{
+    width:100%;
+    background-color: red;
+}
+.overall_contact .content span{
+    font-family: 'Beau Rivage', cursive;
+}
+.overall_contact .content h6{
+    margin-top: 30px;
+}
+
+/* .overall_contact .form_data{
+
+} */
