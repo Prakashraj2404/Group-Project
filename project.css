@@ -4,11 +4,94 @@
     box-sizing: border-box;
 }
 .navbar{
-    background-color: rgb(192, 10, 10);
+    background-color: rgb(188, 12, 12);
+    padding: 7px;
 }
 .nav-link{
     font-weight: bolder;
 }
 .nav-link:hover{
-    color: green;
+    color: white !important;
+}
+#navbarNavDropdown{
+    animation-name: shri;
+    animation-duration: 1.2s;
+    /* transition: all 1s; */
+}
+@keyframes shri{
+    from{
+        transform: translateY(55%)
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+.containerbody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(215, 236, 236);
+}
+.containerbody1{
+    width: 88%;
+}
+.backimg{
+    width: 100%;
+    min-height: 450px;
+    background-image: url(./Images/First\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px,200px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.backimg h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    color: white;
+    font-family:monospace;
+    font-weight: 800;
+}
+.containerbody2{
+    width: 75%;
+    margin-top: 80px;
+    display: flex;
+}
+.carouselimg{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+.carousel-item{
+    height: 550px;
+}
+.carousel{
+    height: 550px;
+}
+.photocon{
+    width: 70%;
+}
+.review{
+    width: 30%;
+    padding-left: 30px;
+}
+.review-details{
+    border: 1px solid black;
+}
+.review-details h2{
+    padding:8px;
+    background-color: rgb(215, 5, 5);
+    color: white;
+    font-size: 30px;
+    /* font-weight: 900; */
+    text-align: center;
+}
+div[title="content"]{
+    padding: 15px;
 }

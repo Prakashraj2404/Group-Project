@@ -21,8 +21,6 @@
   padding: 10px 30px;
 }
 
-
-
 .b-image-area
 {
   width: 100%;
@@ -35,8 +33,13 @@
 {
   position: absolute;
   top: 340px;
-  left: 42%;
+  left: 32%;
   color: white;
+}
+
+.img-text h1
+{
+   font-size: 100px;
 }
 
 .area-2
@@ -50,15 +53,61 @@
 
 .area-2 .box
 {
-  border: 2px solid gold;
-  padding: 13px 20px;
-  width: 90%;
-  height: 270px;
-  transition: width 200ms;
+  border: 2px dotted gold;
+  transition: all 500ms;
+  width: 60vmin;
+  height: 45vmin;
+  position: relative;
   &:hover
   {
     width: 110%;
-    height: 550px;
+    height: 100%;
+    animation-play-state: paused;
+    border: 0px;
+  }
+}
+
+
+.spin-container 
+{
+  width: 100%;
+  height: 100%;
+  animation: spin 12s ease-in-out infinite alternate;
+}
+.shape 
+{
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  border-radius: 23% 77% 33% 67% / 52% 28% 72% 48% ;
+  animation: morph 8s ease-in-out infinite both alternate;
+  overflow: hidden;
+}
+
+.bd
+{
+  width: 100%;
+  height: 100%;
+  animation: spin 12s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes morph 
+{
+  0% 
+  {
+    border-radius: 56% 44% 40% 60% / 40% 79% 21% 60% ;
+  } 
+  100% 
+  {
+    border-radius: 37% 63% 70% 30% / 52% 28% 72% 48% ;
+  } 
+}
+
+@keyframes spin
+ {
+  to 
+  {
+    transform: rotate(1turn);
   }
 }
 
@@ -66,30 +115,93 @@
 {
   opacity: 0.3;
   width: 85%;
+  filter: grayscale(100%);
 }
 
-.box img
+.box:hover :is(.spin-container,.shape,.bd)
 {
-  width: 100%;
-  height: 100%;
+  animation-play-state: paused;
+  animation: morph-hover 1s ease-in-out infinite;
 }
 
-.box:hover img
+.box:hover .shape
 {
-  height: 70%;
+  border-radius: 0%;
+}
+
+@keyframes morph-hover 
+{
+  0% 
+  {
+    border-radius:0%;
+  }  
+}
+
+.area-2 .box:first-child .spin-container,
+.area-2 .box:first-child .bd
+{
+  animation-delay: 5s;
+}
+
+.area-2 .box:last-child .spin-container,
+.area-2 .box:last-child .bd
+{
+  animation-delay: 3s;
+}
+
+.area-2 .box:nth-child(2) .spin-container,
+.area-2 .box:nth-child(2) .bd
+{
+  animation-delay: 10s;
+}
+
+.area-2 .box:nth-child(3) .spin-container,
+.area-2 .box:nth-child(3) .bd
+{
+  animation-delay: 6s;
+}
+
+.area-2 .box:nth-child(4) .spin-container,
+.area-2 .box:nth-child(4) .bd
+{
+  animation-delay: 8s;
+}
+
+.area-2 .box:nth-child(5) .spin-container,
+.area-2 .box:nth-child(5) .bd
+{
+  animation-delay: 2s;
 }
 
 .box-text-area
 {
-  width: 100%;
-  padding: 20px 20px 15px 2px;
   display: none;
+  padding: 1px 15px;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  right: 5%;
+  background-color: #ffffffa8;
 }
 
 .box:hover .box-text-area
 {
   display: unset;
+  animation: box-text-hover  1s ease-in-out;
 }
+
+@keyframes box-text-hover 
+{
+  from
+  {
+    opacity: 0;
+  }  
+  to
+  {
+    opacity: 1;
+  }
+}
+
 
 .box-text-area h5
 {
