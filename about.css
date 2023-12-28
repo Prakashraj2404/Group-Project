@@ -231,6 +231,42 @@ div section:last-child{
         
     }
 }
+.camera{
+    background-color: var(--red);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: 100px;
+    padding: 30px 30px;
+    margin: auto;
+    border: 15px solid var(--dark);
+    border-radius: 15px;
+    margin-top: 20px;
+    /* grid-template-columns: auto auto; */
+}
+.camera img{
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    /* margin-left: 250px; */
+    animation: img 2s ease-in-out;
+    border-radius: 15px;
+    border: 2px solid var(--black);
+}
+.cam p{
+    /* width: 40%;
+    height: 500px; */
+    color: var(--white);
+    
+}
+.camera div:last-child{
+    margin-top: 25px;
+    width: 350px;
+    line-height: 30px;
+    animation: con 2s ease-in-out;
+}
 @media screen and (min-width:300px) and (max-width:500px) {
     .overall{
         /* min-height: 100vh; */
