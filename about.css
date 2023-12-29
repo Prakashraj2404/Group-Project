@@ -274,7 +274,7 @@ div section:last-child{
     .overall{
         /* min-height: 100vh; */
         /* background-color: var(--black); */
-        /* width: 100%; */
+        width: 100%;
         
         }
     .image{
