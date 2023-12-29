@@ -15,6 +15,7 @@
 .overall{
 min-height: 100vh;
 background-color: var(--black);
+overflow: hidden;
 }
 /* .nav{
     position: fixed;
@@ -29,8 +30,8 @@ background-color: var(--black);
 .image h1{
     position: absolute;
     width: 480px;
-    top: 360px;
-    left: 40%;
+    top: 50%;
+    left: 42%;
     color: var(--white);
     font-family: serif;
     font-weight: bolder;
@@ -43,7 +44,7 @@ background-color: var(--black);
 video{
     width: 60%;
     height: 30%;
-    margin-left: 210px;
+    margin-left: 20%;
     margin-top: 100px;
     border: 5px solid var(--red);
     border-radius: 15px;
@@ -72,7 +73,8 @@ video{
 }
 .box{
     background-color: var(--red);
-    width: fit-content;
+    width: 75% ;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +234,7 @@ div section:last-child{
     }
 }
 .camera{
+    
     background-color: var(--red);
     width: fit-content;
     display: flex;
@@ -255,7 +258,7 @@ div section:last-child{
     border-radius: 15px;
     border: 2px solid var(--black);
 }
-.cam p{
+.camera p{
     /* width: 40%;
     height: 500px; */
     color: var(--white);
@@ -267,7 +270,82 @@ div section:last-child{
     line-height: 30px;
     animation: con 2s ease-in-out;
 }
-@media screen and (min-width:300px) and (max-width:500px) {
+@media screen and (min-width:300px) and (max-width:500px){
+    .overall{
+        /* min-height: 100vh; */
+        /* background-color: var(--black); */
+        /* width: 100%; */
+        
+        }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        position: relative;
+        width: 100%;
+    }
+    .image h1{
+        position: absolute;
+        top: 370px;
+        left: 20%;
+        
+    }
+    video{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 35px;
+    }
+    .box{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        /* width: 200px; */
+
+    }
+     .box img{
+        width: 100%;
+     }
+     .box div:last-child{
+        margin-top: 10px;
+        width: 100%;
+        /* line-height: 30px; */
+        /* animation: con 2s ease-in-out; */
+    }
+    .overall div:nth-child(5){
+        display: grid;
+        grid-template-columns: auto;
+    
+    } 
+    .overall div:nth-child(5) img{
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    .overall div:nth-child(6){
+        display: grid;
+        grid-template-columns: auto;
+        
+        width: 100%;
+        /* width: 200px; */
+
+    }
+    .camera{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        /* width: 200px; */
+
+    }
+     .camera img{
+        width: 100%;
+     }
+     .camera div:last-child{
+        margin-top: 10px;
+        width: 100%;
+        /* line-height: 30px; */
+        /* animation: con 2s ease-in-out; */
+    }
+}
+@media screen and (min-width:500px) and (max-width:800px){
     .overall{
         /* min-height: 100vh; */
         /* background-color: var(--black); */
@@ -287,21 +365,23 @@ div section:last-child{
         
     }
     video{
-        margin-left: 80px;
+        width: 80%;
+        margin-left: 10%;
         margin-top: 35px;
     }
     .box{
+        width: 100%;
         display: grid;
         grid-template-columns: auto;
         /* width: 200px; */
 
     }
-     .image{
-        width: 300px;
+     .box img{
+        width: 100%;
      }
      .box div:last-child{
         margin-top: 10px;
-        width: 250px;
+        width: 100%;
         /* line-height: 30px; */
         /* animation: con 2s ease-in-out; */
     }
@@ -310,47 +390,32 @@ div section:last-child{
         grid-template-columns: auto;
     
     } 
+    .overall div:nth-child(5) img{
+        width: 100%;
+        margin-bottom: 3%;
+    }
     .overall div:nth-child(6){
         display: grid;
         grid-template-columns: auto;
+        
+        width: 100%;
         /* width: 200px; */
 
     }
-}
-@media screen and (min-width:500px) and (max-width:800px) {
-    .image img{
-        position: relative;
+    .camera{
         width: 100%;
-    }
-    .image h1{
-        position: absolute;
-        top: 370px;
-        left: 38%;
-    
-    }
-    video{
-        margin-left: 150px;
-        margin-top: 35px;
-    }
-    .box{
         display: grid;
         grid-template-columns: auto;
         /* width: 200px; */
 
     }
-    .image{
-        width: 300px;
+     .camera img{
+        width: 100%;
      }
-     .box div:last-child{
+     .camera div:last-child{
         margin-top: 10px;
-        width: 250px;
+        width: 100%;
         /* line-height: 30px; */
         /* animation: con 2s ease-in-out; */
     }
-    .overall div:nth-child(5){
-        display: grid;
-        grid-template-columns: auto;
-        grid: 10px;
-    
-    } 
 }
