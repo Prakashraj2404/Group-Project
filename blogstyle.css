@@ -16,9 +16,28 @@
   text-transform: uppercase;
 }
 
+.navbar
+{
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-brand img
+{
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
+
 .b-main-area
 {
   padding: 10px 30px;
+  overflow: hidden;
+}
+
+.area-1
+{
+  height: 100vh;
 }
 
 .b-image-area
@@ -27,14 +46,16 @@
   height: 100%;
   filter:blur(1px);
   position: relative;
+  object-fit: fill;
 }
 
 .img-text
 {
   position: absolute;
-  top: 340px;
+  top: 47%;
   left: 32%;
   color: white;
+  text-transform: uppercase;
 }
 
 .img-text h1
@@ -66,7 +87,6 @@
     border: 0px;
   }
 }
-
 
 .spin-container 
 {
@@ -114,7 +134,7 @@
 .area-2:has(.box:hover) .box:not(:hover)
 {
   opacity: 0.3;
-  width: 85%;
+  width: 70%;
   filter: grayscale(100%);
 }
 
@@ -213,10 +233,135 @@
   display: flex;
   justify-content: center;
 }
-
-.navbar
+@media only screen and (min-width:800px) and (max-width:999px)
 {
-  position: fixed !important;
-  width: 100%;
-  z-index: 999;
+  .img-text
+  {
+    top: 49%;
+    left: 25%;
+  }
+
+  .img-text h1 
+  {
+    font-size: 99px;
+  }
+
+  .area-2
+  {
+    gap: 45px;
+  }
+  .area-2 .box
+  {
+    width: 70vmin;
+    height: 50vmin;
+  }
+  
+  .box-text-area
+  {
+    top: 52%;
+  }
+}
+
+@media only screen and (min-width:800px) and (max-width:815px)
+{
+  .box-text-area
+  {
+    top: 68%;
+    left: 2%;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width:650px) and (max-width:800px)
+{
+  .img-text
+  {
+    top: 49%;
+    left: 18%;
+  }
+
+  .img-text h1 
+  {
+    font-size: 95px;
+  }
+
+  .area-2 .box
+  {
+    width: 99vmin;
+    height: 60vmin;
+  }
+
+  .box-text-area
+  {
+    width: 50%;
+    top: 65%;
+  }
+}
+
+@media only screen and (min-width:500px) and (max-width:650px)
+{
+  
+  .img-text
+  {
+    top: 49%;
+    left: 15%;
+  }
+
+  .img-text h1 
+  {
+    font-size: 75px;
+  }
+
+  .area-2 .box
+  {
+    width: 75vmin;
+    height: 50vmin;
+  }
+
+  .box-text-area
+  {
+    width: 75%;
+    top: 55%;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width:500px)
+{
+  .img-text
+  {
+    top: 49%;
+    left: 18%;
+  }
+
+  .img-text h1 
+  {
+    font-size: 65px;
+  }
+
+  .area-2
+  {
+    grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
+  }
+
+  .area-2 .box
+  {
+    width: 80vmin;
+    height: 50vmin;
+  }
+  
+  .box-text-area
+  {
+    width: 85%; 
+    top: 45%;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width:400px)
+{
+  .box-text-area
+  {
+    width: 90%;
+    top: 20%;
+    left: 5%;
+  }
 }
