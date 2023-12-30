@@ -23,24 +23,26 @@ overflow: hidden;
 .image img {
     /* background-image: url(./aboutimages/lens-490806_1280.webp); */
     width: 100%;
-    height: 800px;
+    height: 100vh;
     object-fit: cover;
     position: relative;
 }
 .image h1{
     position: absolute;
-    width: 480px;
-    top: 50%;
+    /* width: 480px; */
+    top: 45%;
     left: 42%;
     color: var(--white);
     font-family: serif;
     font-weight: bolder;
+    
+    
     /* animation: about 2s ease-in-out; */
     
 }
-.image span{
+/* .image span{
     color: #B31312;
-}
+} */
 video{
     width: 60%;
     height: 30%;
@@ -270,6 +272,115 @@ div section:last-child{
     line-height: 30px;
     animation: con 2s ease-in-out;
 }
+.drone{
+    
+    background-color: var(--red);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: 100px;
+    padding: 30px 30px;
+    margin: auto;
+    border: 15px solid var(--dark);
+    border-radius: 15px;
+    margin-top: 20px;
+    /* grid-template-columns: auto auto; */
+}
+.drone img{
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    /* margin-left: 250px; */
+    animation: img 2s ease-in-out;
+    border-radius: 15px;
+    border: 2px solid var(--black);
+}
+.drone p{
+    /* width: 40%;
+    height: 500px; */
+    color: var(--white);
+    
+}
+.drone div:last-child{
+    margin-top: 25px;
+    width: 350px;
+    line-height: 30px;
+    animation: drone 2s ease-in-out;
+}
+@keyframes drone {
+    0%{
+        transform: translateX(100%);
+        
+    }
+    100%{
+        transform: translateX(0%);
+        
+    }
+}
+.overall div:nth-child(9){
+    background-color:var(--red) ;
+    width: 100%;
+    height: fit-content;
+    padding: 2% 2%;
+    border: 15px solid var(--dark);
+    border-radius: 15px;
+    
+}
+.overall div:nth-child(9) :first-child{
+    width: 100%;
+    
+}
+.overall div:nth-child(9) :first-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3%;
+}
+.overall div:nth-child(9) :first-child img{
+    width: 30%;
+}
+.overall div:nth-child(9) :nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3%;
+}
+
+/* .overall div:nth-child(9) :first-child :nth-child(1){
+    width: 85%;
+    
+    
+}
+.overall div:nth-child(9) :first-child :nth-child(1):hover{
+    
+    transform: scale(1.1);
+    object-fit: cover;
+    
+}
+.overall div:nth-child(9) :first-child :nth-child(2){
+    width: 85%;
+    
+}
+.overall div:nth-child(9) :first-child :nth-child(3){
+    width: 85%;
+    
+} */
+.overall div:nth-child(9) :nth-child(2) :nth-child(1){
+    width: 100%;
+    
+}
+.overall div:nth-child(9) :nth-child(2) :nth-child(2){
+    width: 100%;
+    padding: 2%;
+    
+}
+.overall div:nth-child(9) :nth-child(2) :nth-child(3){
+    width: 100%;
+    
+}
+
 @media screen and (min-width:300px) and (max-width:500px){
     .overall{
         /* min-height: 100vh; */
@@ -287,7 +398,7 @@ div section:last-child{
     .image h1{
         position: absolute;
         top: 370px;
-        left: 20%;
+        left: 24%;
         
     }
     video{
@@ -339,6 +450,22 @@ div section:last-child{
         width: 100%;
      }
      .camera div:last-child{
+        margin-top: 10px;
+        width: 100%;
+        /* line-height: 30px; */
+        /* animation: con 2s ease-in-out; */
+    }
+    .drone{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        /* width: 200px; */
+
+    }
+     .drone img{
+        width: 100%;
+     }
+     .drone div:last-child{
         margin-top: 10px;
         width: 100%;
         /* line-height: 30px; */
@@ -413,6 +540,22 @@ div section:last-child{
         width: 100%;
      }
      .camera div:last-child{
+        margin-top: 10px;
+        width: 100%;
+        /* line-height: 30px; */
+        /* animation: con 2s ease-in-out; */
+    }
+    .drone{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        /* width: 200px; */
+
+    }
+     .drone img{
+        width: 100%;
+     }
+     .drone div:last-child{
         margin-top: 10px;
         width: 100%;
         /* line-height: 30px; */
