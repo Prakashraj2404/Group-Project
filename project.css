@@ -73,6 +73,7 @@
 }
 .carousel{
     height: 550px;
+    box-shadow: 5px 0 8px black,0 -5px 8px black;
 }
 .photocon{
     width: 70%;
@@ -83,6 +84,7 @@
 }
 .review-details{
     border: 1px solid black;
+    box-shadow: 5px 0 8px black,0 5px 8px black;
 }
 .review-details h2{
     padding:8px;
@@ -129,4 +131,7 @@ div[title="camera"] span{
     font-size: 14px;
     margin: 0;
     padding: 0;
+}
+.photocontent h1{
+    margin: 15px;
 }
