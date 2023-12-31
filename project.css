@@ -135,3 +135,64 @@ div[title="camera"] span{
 .photocontent h1{
     margin: 15px;
 }
+.projectcontent i{
+    padding: 10px;
+}
+.projectcontent{
+    padding: 0px 10px 15px 60px;
+}
+.projectcontent p{
+    margin-top: 15px;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+div[title="photos"]{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    margin-bottom: 30px
+}
+div[title="photos"] img{
+    width: 48.5%;
+    margin-top: 25px;
+    box-shadow: 5px 0 8px black,0 5px 8px black;
+}
+div[title="review"]{
+    padding: 40px 40px 0px;
+    position: relative;
+    background-color: rgb(255, 219, 16);
+}
+.icon{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+.review-stars i{
+    padding: 5px;
+}
+div[title="review"] p{
+    margin-top: 20px;
+    color: white;
+    padding: 0 15px;
+}
+div[title="review"] div[title="review1"]{
+    border-bottom: 1.5px solid white;
+}
+.nextnav{
+    padding: 25px 25px 10px;
+    background-color: rgb(26, 25, 25);
+}
+div[title="review2"] img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+div[title="review2"]{
+    display: flex;
+    padding: 15px;
+    color: white;
+}
