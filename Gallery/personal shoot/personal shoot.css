@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.overall{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background: linear-gradient(-45deg,#d3eb4b,rgb(82, 233, 82),rgb(233, 165, 38),violet;);
+    background-size:400% 400%;
+    
+}
+
+h1{
+    background-color: aqua;
+    color: chocolate;
+    font-size:40px;
+    font-family: 'Nosifer', sans-serif;
+    font-weight:bolder;
+    text-align: center;
+}
