@@ -30,8 +30,9 @@ body a
 
 .navbar-brand img
 {
-  mix-blend-mode: multiply;
-  filter: contrast(1);
+  width: 150px;
+  /* mix-blend-mode: multiply; */
+  /* filter: contrast(1); */
 }
 
 .b-main-area
