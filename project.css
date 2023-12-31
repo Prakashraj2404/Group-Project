@@ -196,3 +196,19 @@ div[title="review2"]{
     padding: 15px;
     color: white;
 }
+footer{
+    background-color: rgb(28, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+footer div{
+    padding: 20px;
+    text-align: center;
+}
