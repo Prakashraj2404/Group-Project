@@ -4,6 +4,7 @@
     box-sizing:border-box;
 }
 
+
 /* Top Image  */
 .service_top_image{
     width:90%;
@@ -17,8 +18,13 @@
     object-fit: cover;
     position: relative;
     filter: brightness(70%);
+    border-radius: 5px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,1.20),0 6px 20px 0 rgba(0,0,0,1.29);
+                            
 }
 .service_top_image div h1{
+    text-align: center;
+    font-size: 60px;
     position: absolute;
     color:white;
     top: 50%;
@@ -27,6 +33,7 @@
     
 }
 /* Studio Photography */
+
 .service_top_second_image{
     width:75%;
     height:75%;
@@ -38,7 +45,18 @@
     width:100%;
     height:80vh;
     object-fit: cover;
+    padding:5px;
+    /* border:2px solid #ddd; */
+    border-radius: 6px;
+    filter: brightness(70%);
+    box-shadow:0 4px 8px 0 rgba(0,0,0,1.20),0 6px 20px 0 rgba(0,0,0,1.29);
 }
+
+/* .service_top_second_image img:hover{
+    transition: all 1s;
+    transform: scale(1.10);
+    
+} */
 
 /* overall */
 .overall{
@@ -46,23 +64,32 @@
     width:75%;
     display: flex;
     gap:20px;
-    /* background-color: orange; */
+  
 }
 .overall :first-child{
-    width:30%;   
+    width:30%;  
 }
 .overall a{
     text-decoration: none;
+    font-size: 18px;
+}
+.overall a:hover{
+    color:#fe21a2;
 }
 .overall :last-child{
     width:100%;
 }
+/* h1 studio photography */
 .overall div .studio{
     width:100%;
+    font-size: 50px;
+    color:black;
 }
 .fa-check-double{
     margin-left:50px;
     margin-right:20px;
+    color:#fe21a2;
+    font-size:25px;
 }
 .overall .last{
     margin-top: 20px;
@@ -79,13 +106,11 @@
     gap:90px;
 }
 .overall_contact .content{
-    width:30%;
-    
+    width:30%; 
 }
 .overall_contact .form_data{
     width:100%;
     margin-top: 30px;
-    /* background-color:blue; */
 }
 .overall_contact .content span{
     font-family: 'Beau Rivage', cursive;
@@ -95,31 +120,39 @@
 }
 .form_data form .name,.email{
     width:34%; 
-    /* background-color: rgb(26,26,26); */
+}
+.form_data div{
+    display: flex;
+    gap:20px;
 }
 .form_data form input{
     padding:5px;
     margin-bottom: 15px;
-    /* background-color: rgb(26,26,26); */
+    
+}
+.form_data form input:focus{
+    background-color:lightblue;
 }
 .form_data form .subject{
     width:71%;
-    /* background-color: rgb(26,26,26); */
+    
 }
 .form_data form textarea{
     resize: none;
     width:71%;
     height:20vh;
     padding:5px;
-    /* background-color: rgb(26,26,26); */
-    /* color:white; */
     border-radius: 3px;
+}
+.form_data form textarea:focus{
+    background-color: lightblue;
+    
 }
 .form_data form button{
     width:130px;
     padding:5px;
-    background-color:red;
-    border:2px solid red;
+    background-color:green;
+    border:2px solid green;
     color:white;
     margin-top: 25px;
 }
@@ -127,4 +160,118 @@
     box-shadow: 0px 0px 5px #fe21a2,
                 0px 0px 30px #fe21a2,
                 0px 0px 90px #fe21a2;
+}
+
+
+/* ------- Responsive code  for Mobile -------- */
+@media only screen and (min-width:300px) and (max-width:500px){
+    /* overall */
+    .overall{
+        flex-direction: column;
+        width:95%;
+    }
+    .overall :first-child{
+        width:100%;   
+    }
+    .overall  a{
+        font-size: 20px;
+        text-align: center;
+    }
+    .overall hr{
+        width:75%;
+    }
+    
+
+    /* form design */
+    .overall_contact{
+        flex-direction: column;
+        width:95%;
+        gap:30px;
+    }
+    .overall_contact .content{
+        width:100%; 
+    }
+    .overall_contact .form_data{
+        margin-top: 0px;
+    }
+    .form_data form .name,.email{
+        width:100%; 
+    }
+    .form_data form input{
+        margin-bottom: 5px;
+    }
+    .form_data div{
+        flex-direction: column;
+        gap:7px;
+    }
+    .form_data form .subject{
+        width:100%;
+        margin-top: 10px;
+    }
+    .form_data form textarea{
+        margin-top: 10px;
+        width:100%;
+        height:20vh;
+    }
+}
+
+/* ------- Responsive code for Tab  ------ */
+
+@media only screen and (min-width:500px) and (max-width:800px){
+    /* overall */
+    .overall{
+        flex-direction: column;
+        width:95%;
+    }
+    .overall :first-child{
+        width:100%;
+          
+    }
+    .overall  a{
+        font-size: 20px;
+        text-align: center;
+    }
+    .overall hr{
+        width:55%;
+    }
+    
+
+    /* form design */
+    .overall_contact{
+        flex-direction: column;
+        width:95%;
+        gap:30px;
+    }
+    .overall_contact .content{
+        width:100%; 
+        text-align: center;
+    }
+    .overall_contact .form_data{
+        margin-top: 0px;
+    }
+    .form_data form .name,.email{
+        width:80%; 
+    }
+    .form_data form input{
+        margin-bottom: 5px;
+    }
+    .form_data div{
+        flex-direction: column;
+        gap:7px;
+    }
+    .form_data form .subject{
+        width:80%;
+        margin-top: 10px;
+    }
+    .form_data form textarea{
+        margin-top: 10px;
+        width:80%;
+        height:20vh;
+    }
+    .form_data form{
+        margin-left: 100px;
+        
+        
+}
+
 }
