@@ -590,6 +590,47 @@ object-fit: cover;
         
     }
 }
+.overall div:nth-child(12){
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    animation: con 2s ease-in-out;
+}
+@keyframes con{
+    0%{
+        transform: translateX(100%);
+        
+    }
+    100%{
+        transform: translateX(0%);
+        
+    }
+}
+
+.overall div:nth-child(12) div:nth-child(1){
+    width: 50%;
+}
+/* .overall div:nth-child(12) div:nth-child(1) p{
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    color: var(--red);
+} */
+.overall div:nth-child(12) div:nth-child(1) h1{
+    border-bottom: 3px solid var(--dark);
+}
+.overall div:nth-child(12) div:nth-child(1) span{
+    color: var(--red);
+}
+.overall div:nth-child(12) div:nth-child(2){
+    width: 50%;
+}
+.overall div:nth-child(12) div:nth-child(2) img{
+ width: 60%
+ 
+}
 
 @media screen and (min-width:300px) and (max-width:500px){
     .overall{
@@ -709,6 +750,22 @@ object-fit: cover;
     .overall div:nth-child(10) div:nth-child(3) {
         width: 100%;
     }
+    .overall div:nth-child(11) button {
+        width: 100%;
+    }
+    .overall div:nth-child(12){
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .overall div:nth-child(12) div:nth-child(1){
+        width: 100%;
+    }
+    .overall div:nth-child(12) div:nth-child(2) {
+        width: 100%;
+    }
+    .overall div:nth-child(12) div:nth-child(2) img{
+        width: 100%;
+    }
 }
 @media screen and (min-width:500px) and (max-width:800px){
     .overall{
@@ -825,6 +882,22 @@ object-fit: cover;
         width: 100%;
     }
     .overall div:nth-child(10) div:nth-child(3) {
+        width: 100%;
+    }
+    .overall div:nth-child(11) button {
+        width: 50%;
+    }
+    .overall div:nth-child(12){
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .overall div:nth-child(12) div:nth-child(1){
+        width: 100%;
+    }
+    .overall div:nth-child(12) div:nth-child(2) {
+        width: 100%;
+    }
+    .overall div:nth-child(12) div:nth-child(2) img{
         width: 100%;
     }
 }
