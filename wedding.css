@@ -29,7 +29,7 @@
 } */
 
 h1{
-    margin: 10px;
+    margin: 20px;
     background-color:transparent;
     font-size:40px;
     font-family: 'Permanent Marker', cursive;
@@ -49,13 +49,15 @@ h1{
 
 .firstimg{
     height: 500px;
-    width: 100%;
+    width: 90%;
 
 }
 
 .images img{
     border-radius: 5px;
     object-fit: cover;
+    box-shadow:-2.5px -2.5px 2.5px black;
+
 }
 
 .images :hover{
@@ -65,4 +67,23 @@ h1{
     box-shadow:10px 10px 5px black;
     cursor: pointer;
 
+}
+
+
+
+footer{
+    background-color: rgb(28, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+footer div{
+    padding: 20px;
+    text-align: center;
 }
