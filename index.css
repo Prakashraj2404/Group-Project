@@ -5,30 +5,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.nav-item a{
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+                            /* Track */
+::-webkit-scrollbar-track {
+     background:#F5F5F5; 
+}
+
+                            /* Handle */
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(75deg,yellow,red);
+}
+
+.photoalbums article button {
+    padding: 3px 10px;
+    border: unset;
+    background-color: rgb(0, 255, 247);
+    border-radius: 7px;
+    font-size: small;
+}
+
+
+.nav-item a {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px!important;
+    font-size: 18px !important;
 }
 
-.navbar{
-    border-bottom: 1px solid black!important;
+.navbar {
+    border-bottom: 1px solid black !important;
 }
 
-.carouselimg{
+.carouselimg {
     height: 100vh;
     width: 100%;
     object-fit: cover;
     background-color: black;
 }
 
-.services{
+.services {
     min-height: 100vh;
     width: 100%;
     padding: 80px 150px;
@@ -38,11 +61,11 @@
     color: white;
 }
 
-.services section{
+.services section {
     width: 375px;
 }
 
-.services .serviceheading{
+.services .serviceheading {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -50,27 +73,27 @@
     flex-wrap: wrap;
 }
 
-.serviceheading section:first-child h2:first-child{
+.serviceheading section:first-child h2:first-child {
     font-size: 2.5rem;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
-.serviceheading section:first-child h2:first-child span{
+.serviceheading section:first-child h2:first-child span {
     font-family: 'Beau Rivage', cursive;
     font-size: 48px;
 }
 
-.services section:last-child p:first-child{
-    font-family:'Times New Roman', Times, serif;
+.services section:last-child p:first-child {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
-.services p:first-child span{
+.services p:first-child span {
     color: red;
 }
 
-.servicetypes{
+.servicetypes {
     display: flex;
     justify-content: space-between;
     gap: 25px;
@@ -79,7 +102,7 @@
     padding: 25px 0;
 }
 
-.servicetypes article{
+.servicetypes article {
     width: 220px;
     height: 250px;
     background-color: white;
@@ -93,7 +116,7 @@
     cursor: pointer;
 }
 
-.servicetypes article section img{
+.servicetypes article section img {
     height: 100px;
     width: 100px;
     object-fit: cover;
@@ -101,7 +124,7 @@
     margin-bottom: 20px;
 }
 
-.aaaa{
+.aaaa {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -110,40 +133,40 @@
     border-radius: 5px;
 }
 
-.servicetypes article:hover .aaaa{
+.servicetypes article:hover .aaaa {
     transition: all 1s;
     transform: scale(0);
     width: 150px;
     height: 125px;
 }
 
-.albums{
+.albums {
     min-height: 90vh;
     width: 100%;
     text-align: center;
     padding: 20px 0;
 }
 
-.albums p:first-child span{
+.albums p:first-child span {
     color: red;
 }
 
-.albums p:first-child~h2{
-    font-family:'Times New Roman', Times, serif;
+.albums p:first-child~h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2.5rem;
 }
 
-.albums p:first-child~h2 span{
+.albums p:first-child~h2 span {
     font-family: 'Beau Rivage', cursive;
 }
 
-.photoalbums article p{
-    margin: 0!important;
+.photoalbums article p {
+    margin: 0 !important;
     width: 450px;
 }
 
-.photoalbums article{
+.photoalbums article {
     height: 250px;
     width: 450px;
     padding: 20px;
@@ -156,12 +179,12 @@
     text-align: start;
 }
 
-.photoalbums article:hover{
+.photoalbums article:hover {
     transition: all 0.5s;
     transform: scale(1.05);
 }
 
-.photoalbums{
+.photoalbums {
     display: flex;
     overflow-x: scroll;
     gap: 20px;
@@ -174,19 +197,19 @@
     cursor: pointer;
 }
 
-                            /* Track */
+/* Track */
 .photoalbums::-webkit-scrollbar-track {
-     background:#F5F5F5; 
-     cursor: pointer;
+    background: #F5F5F5;
+    cursor: pointer;
 }
 
-                            /* Handle */
+/* Handle */
 .photoalbums::-webkit-scrollbar-thumb {
-    background:linear-gradient(75deg,red,yellow);
+    background: linear-gradient(75deg, red, yellow);
 
 }
 
-.photoalbums article button{
+.photoalbums article button {
     padding: 3px 10px;
     border: unset;
     background-color: rgb(0, 255, 247);
@@ -195,73 +218,73 @@
 }
 
 
-.photoalbums article:first-child{
+.photoalbums article:first-child {
     background: url(./Images/First\ background.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.photoalbums article:nth-child(2){
+.photoalbums article:nth-child(2) {
     background: url(./Images/Second\ background.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.photoalbums article:nth-child(3){
+.photoalbums article:nth-child(3) {
     background: url(./Images/Fourth\ background.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.photoalbums article:nth-child(4){
+.photoalbums article:nth-child(4) {
     background: url(./Images/Third\ background.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.photoalbums article:last-child{
+.photoalbums article:last-child {
     background: url(./Images/portfolio.webp);
     background-position: center;
     background-size: cover;
 }
 
-.aboutagency{
+.aboutagency {
     min-height: 100vh;
     padding: 30px 150px;
     margin-bottom: 50px;
 }
 
-.aboutagency p:first-child span{
+.aboutagency p:first-child span {
     color: red;
 }
 
-.aboutagency section:nth-child(2){
+.aboutagency section:nth-child(2) {
     display: flex;
     margin-bottom: 30px;
 }
 
-.aboutagency section:nth-child(2) div{
+.aboutagency section:nth-child(2) div {
     width: 50%;
 }
 
-.aboutagency section:nth-child(2) div:first-child h2:first-child{
-    font-family:'Times New Roman', Times, serif;
+.aboutagency section:nth-child(2) div:first-child h2:first-child {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2.5rem;
 }
 
-.aboutagency section:nth-child(2) div:first-child h2:first-child span{
+.aboutagency section:nth-child(2) div:first-child h2:first-child span {
     font-family: 'Beau Rivage', cursive;
 }
 
-.aboutagency section:nth-child(2) div:last-child{
+.aboutagency section:nth-child(2) div:last-child {
     display: flex;
     justify-content: end;
     align-items: start;
     padding: 10px;
 }
 
-.aboutagency section:nth-child(2) div:last-child button{
+.aboutagency section:nth-child(2) div:last-child button {
     padding: 8px 20px;
     background-color: red;
     color: white;
@@ -271,34 +294,34 @@
     font-weight: bold;
 }
 
-.aboutagency section:nth-child(3) div:first-child img{
+.aboutagency section:nth-child(3) div:first-child img {
     width: 100%;
 
 }
 
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
 }
 
-.agency div{
+.agency div {
     height: 300px;
 }
 
-.agency div:first-child img{
+.agency div:first-child img {
     height: 100%;
     border-radius: 10px;
 }
 
-.covered{
+.covered {
     height: 85vh;
     width: 100%;
     text-align: center;
     position: relative;
 }
 
-.coveredimg{
+.coveredimg {
     height: 100%;
     width: 74%;
     margin: auto;
@@ -307,7 +330,7 @@
     object-fit: cover;
 }
 
-.covereddetails{
+.covereddetails {
     display: flex;
     gap: 20px;
     position: absolute;
@@ -315,7 +338,7 @@
     left: 175px;
 }
 
-.covereddetails nav{
+.covereddetails nav {
     width: 200px;
     height: 100px;
     display: grid;
@@ -325,7 +348,7 @@
     backdrop-filter: blur(20px);
 }
 
-.covereddetails nav h3:first-child{
+.covereddetails nav h3:first-child {
     font-weight: bold;
     font-style: italic;
     font-size: 40px;
@@ -333,50 +356,50 @@
     margin: 0;
 }
 
-.covereddetails nav p:nth-child(2){
+.covereddetails nav p:nth-child(2) {
     font-weight: bold;
     font-style: italic;
     font-size: large;
     margin: 0;
 }
 
-.ourteam{
+.ourteam {
     padding: 30px 150px;
     margin: 30px 0;
 }
 
-.ourteam p:first-child span{
+.ourteam p:first-child span {
     color: red;
 }
 
-.ourteam section:nth-child(2){
+.ourteam section:nth-child(2) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.ourteam section:nth-child(2) article{
+.ourteam section:nth-child(2) article {
     width: 400px;
 }
 
-.ourteam section:nth-child(2) article:first-child h2{
-    font-family:'Times New Roman', Times, serif;
+.ourteam section:nth-child(2) article:first-child h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2.7rem;
 
 }
 
-.ourteam section:nth-child(2) article:first-child h2 span{
+.ourteam section:nth-child(2) article:first-child h2 span {
     font-family: 'Beau Rivage', cursive;
 }
 
-.ourteam section:nth-child(2) article:last-child p{
+.ourteam section:nth-child(2) article:last-child p {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
 }
 
-.members{
+.members {
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -385,7 +408,7 @@
     margin-top: 50px;
 }
 
-.team{
+.team {
     width: 300px;
     height: 450px;
     border-radius: 5px;
@@ -393,45 +416,45 @@
     overflow: hidden;
 }
 
-.team div:first-child{
+.team div:first-child {
     height: 65%;
     cursor: pointer;
     overflow: hidden;
 }
 
-.team div:first-child img{
+.team div:first-child img {
     width: 100%;
     height: 100%;
     border-radius: 5px 5px 0 0;
 }
 
-.team:hover div:first-child img{
+.team:hover div:first-child img {
     transition: all 1s;
     transform: scale(1.10);
 }
 
-.team .padd{
+.team .padd {
     padding: 15px;
 }
 
-.padd div:first-child h2{
-    font-family:'Times New Roman', Times, serif;
+.padd div:first-child h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2rem;
 }
 
-.padd div:first-child p{
+.padd div:first-child p {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-.membersicon{
+.membersicon {
     display: flex;
     justify-content: start;
     gap: 20px;
 }
 
-.membersicon i{
+.membersicon i {
     border: 1px solid black;
     border-radius: 50%;
     padding: 8px;
@@ -440,95 +463,95 @@
     cursor: pointer;
 }
 
-.membersicon i:nth-child(2){
+.membersicon i:nth-child(2) {
     padding: 8px 12px;
 }
 
-.membersicon i:nth-child(3){
+.membersicon i:nth-child(3) {
     padding: 8px 6.5px;
 }
 
-.membersicon i:last-child{
+.membersicon i:last-child {
     padding: 8px 9px;
 }
 
-.team:hover{
-    box-shadow: 0px 0px 10px 1px rgba(255,55,55,1),
-0px 25px 20px -20px rgba(0,0,0,0.45),
--25px 0px 20px -20px rgba(0,0,0,0.45),
-0px 15px 12px 0px rgba(0,0,0,0.22),
-0px 15px 12px 0px rgba(0,0,0,0.22);
+.team:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 55, 55, 1),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 15px 12px 0px rgba(0, 0, 0, 0.22),
+        0px 15px 12px 0px rgba(0, 0, 0, 0.22);
 }
 
-.team:hover .membersicon i{
+.team:hover .membersicon i {
     transition: all 1s;
     background-color: rgb(255, 55, 55);
     color: white;
 }
 
-.membersicon i:hover{
+.membersicon i:hover {
     transform: scale(1.20);
 }
 
-.portfolio{
+.portfolio {
     text-align: center;
     margin: 10px;
 }
 
-.portfolio p:first-child span{
+.portfolio p:first-child span {
     color: red;
 }
 
-.portfolio p:first-child~h2{
-    font-family:'Times New Roman', Times, serif;
+.portfolio p:first-child~h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2.5rem;
 }
 
-.portfolio p:first-child~h2 span{
+.portfolio p:first-child~h2 span {
     font-family: 'Beau Rivage', cursive;
 }
 
-.memories{
+.memories {
     display: flex;
     gap: 0 150px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.memories section{
+.memories section {
     width: 290px;
     margin: 20px 0;
 }
 
-.memories div article .bigimg{
+.memories div article .bigimg {
     width: 100%;
     height: 475px;
     cursor: pointer;
     object-fit: cover;
 }
 
-.smallimg{
+.smallimg {
     height: 325px;
     width: 100%;
     cursor: pointer;
     object-fit: cover;
 }
 
-.memories div section{
+.memories div section {
     text-align: left;
 }
 
-.memories div section h2{
+.memories div section h2 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
     color: rgb(61, 60, 60);
-    margin: unset!important;
+    margin: unset !important;
 }
 
-.memories button{
+.memories button {
     width: 100%;
     padding: 10px;
     background-color: red;
@@ -536,15 +559,15 @@
     border: unset;
 }
 
-.review{
+.reviews {
     margin: 70px 0;
     background: url(./Images/drone.jpeg);
     min-height: 90vh;
     object-fit: cover;
-    background-position:center;
+    background-position: center;
 }
 
-.review1{
+.review11 {
     width: 50%;
     background-color: transparent;
     position: relative;
@@ -555,85 +578,162 @@
     border-radius: 5px;
 }
 
-.review1 p{
+.review11 p {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
 }
 
-.quotesicon{
+.quotesicon {
     position: absolute;
     right: 30px;
     top: 15px;
 }
 
-.review-stars{
+.reviewstars {
     margin-bottom: 30px;
 }
 
-.review2{
+.review12 {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.review2 img{
+.review12 img {
     height: 50px;
     width: 50px;
 }
 
-.review2 h2{
+.review12 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
 }
 
+footer {
+    background-color: rgb(28, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+footer div {
+    padding: 20px;
+    text-align: center;
+}
+
+.footimg {
+    height: 100px;
+    width: 400px;
+}
+
+.signup {
+    width: 80%;
+    border: 1px solid white;
+    display: flex;
+    margin: 20px 30px;
+    padding: 0;
+
+}
+
+.signup input {
+    width: 70%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.signup input:focus {
+    outline: none;
+}
+
+.signup button {
+    width: 30%;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.icons {
+    margin: 25px 40px;
+}
+
+.icons i {
+    padding: 15px;
+}
 
 
 
-
-
-
-
-
-@media screen and (max-width:750px){
-    .memories{
+@media screen and (max-width:750px) {
+    .memories {
         gap: 50px;
     }
 }
 
 @media screen and (max-width:850px) {
-    .services{
+    .services {
         padding: 50px;
     }
 
-    .ourteam{
+    .ourteam {
         padding: 20px;
     }
 
 }
 
-@media screen and (max-width:950px){
-    .aboutagency{
-        padding: 20px;
-    }
-    .aboutagency section:nth-child(2){
+@media screen and (max-width:900px) {
+    footer {
         flex-direction: column;
     }
-    .aboutagency section:nth-child(2) div{
+
+    .footimg {
+        width: 280px;
+    }
+
+    .icons {
+        margin: 25px 0;
+    }
+
+    .icons i {
+        padding: 15px 5px;
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .aboutagency {
+        padding: 20px;
+    }
+
+    .aboutagency section:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .aboutagency section:nth-child(2) div {
         width: 75%;
     }
-    .covereddetails{
+
+    .covereddetails {
         display: none;
     }
 
-    .review{
+    .reviews {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .review1{
+
+    .review11 {
         width: 90%;
         position: unset;
     }
