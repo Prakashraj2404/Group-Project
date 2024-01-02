@@ -212,3 +212,33 @@ footer div{
     padding: 20px;
     text-align: center;
 }
+.signup{
+    width: 80%;
+    border: 1px solid white;
+    display: flex;
+    margin: 20px 30px;
+    padding: 0;
+    
+}
+.signup input{
+    width: 70%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+.signup input:focus{
+    outline: none;
+}
+.signup button{
+    width: 30%;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.icons{
+    margin: 25px 40px;
+}
+.icons i{
+    padding: 15px;
+}
