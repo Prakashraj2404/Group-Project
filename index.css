@@ -13,6 +13,12 @@
 
 .nav-item a{
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px!important;
+}
+
+.navbar{
+    border-bottom: 1px solid black!important;
 }
 
 .carouselimg{
@@ -67,7 +73,7 @@
 .servicetypes{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
     flex-wrap: wrap;
     padding: 25px 0;
@@ -86,12 +92,6 @@
     transition: all 2s;
     cursor: pointer;
 }
-
-/* .servicetypes article:hover{
-    transition: all 1s;
-    transform: scale(1.50);
-    transform: rotateY(360deg);
-} */
 
 .servicetypes article section img{
     height: 100px;
@@ -182,7 +182,7 @@
 
                             /* Handle */
 .photoalbums::-webkit-scrollbar-thumb {
-    background:linear-gradient(75deg,rgb(0, 255, 247),yellow);
+    background:linear-gradient(75deg,red,yellow);
 
 }
 
@@ -228,6 +228,7 @@
 .aboutagency{
     min-height: 100vh;
     padding: 30px 150px;
+    margin-bottom: 50px;
 }
 
 .aboutagency p:first-child span{
@@ -295,7 +296,6 @@
     width: 100%;
     text-align: center;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .coveredimg{
@@ -304,6 +304,7 @@
     margin: auto;
     text-align: center;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .covereddetails{
@@ -388,7 +389,6 @@
     width: 300px;
     height: 450px;
     border-radius: 5px;
-    /* background-color: aqua; */
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3), 4px 4px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
@@ -437,7 +437,6 @@
     padding: 8px;
     color: var(--white);
     font-size: 20px;
-    /* margin: 10px 5px 0 0; */
     cursor: pointer;
 }
 
@@ -469,4 +468,173 @@
 
 .membersicon i:hover{
     transform: scale(1.20);
+}
+
+.portfolio{
+    text-align: center;
+    margin: 10px;
+}
+
+.portfolio p:first-child span{
+    color: red;
+}
+
+.portfolio p:first-child~h2{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.portfolio p:first-child~h2 span{
+    font-family: 'Beau Rivage', cursive;
+}
+
+.memories{
+    display: flex;
+    gap: 0 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.memories section{
+    width: 290px;
+    margin: 20px 0;
+}
+
+.memories div article .bigimg{
+    width: 100%;
+    height: 475px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.smallimg{
+    height: 325px;
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.memories div section{
+    text-align: left;
+}
+
+.memories div section h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(61, 60, 60);
+    margin: unset!important;
+}
+
+.memories button{
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: unset;
+}
+
+.review{
+    margin: 70px 0;
+    background: url(./Images/drone.jpeg);
+    min-height: 90vh;
+    object-fit: cover;
+    background-position:center;
+}
+
+.review1{
+    width: 50%;
+    background-color: transparent;
+    position: relative;
+    padding: 30px;
+    backdrop-filter: blur(20px);
+    top: 50px;
+    left: 50px;
+    border-radius: 5px;
+}
+
+.review1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.quotesicon{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+.review-stars{
+    margin-bottom: 30px;
+}
+
+.review2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.review2 img{
+    height: 50px;
+    width: 50px;
+}
+
+.review2 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:750px){
+    .memories{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .services{
+        padding: 50px;
+    }
+
+    .ourteam{
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:950px){
+    .aboutagency{
+        padding: 20px;
+    }
+    .aboutagency section:nth-child(2){
+        flex-direction: column;
+    }
+    .aboutagency section:nth-child(2) div{
+        width: 75%;
+    }
+    .covereddetails{
+        display: none;
+    }
+
+    .review{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .review1{
+        width: 90%;
+        position: unset;
+    }
 }
