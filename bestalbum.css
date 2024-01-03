@@ -25,7 +25,29 @@
   width: 100%;
   z-index: 999;
 }
-
+.navbar{
+    background-color: rgb(188, 12, 12);
+    padding: 7px;
+}
+.nav-link{
+    font-weight: bolder;
+}
+.nav-link:hover{
+    color: white !important;
+}
+#navbarNavDropdown{
+    animation-name: shri;
+    animation-duration: 1.2s;
+    /* transition: all 1s; */
+}
+@keyframes shri{
+    from{
+        transform: translateY(55%)
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
 .navbar-brand img
 {
   width: 150px;
