@@ -46,6 +46,8 @@
 } */
 
 h1{
+    padding-top: 11%;
+
     /* margin: 20px; */
     background-color:transparent;
     font-size:40px;
@@ -217,3 +219,13 @@ h1{
     
     }
     
+@media only screen and (min-width:300px) and (max-width:800px){
+    .images img{
+        flex-direction: column;
+        height: 200px;
+        width: 200px;
+    }
+    h1{
+        padding-top: 50%;
+    }
+}

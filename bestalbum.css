@@ -86,7 +86,7 @@ h1{
     cursor: pointer;
 
 }
-
+/* ////////////////////////////footer///////////////////////////// */
 
 
 .footer_overall{
@@ -102,7 +102,7 @@ h1{
     display: flex;
     justify-content:space-between;
     /* justify-content: space-evenly; */
-    padding:50px;
+    padding:15px;
     
 }
 /* .container .left{
@@ -216,4 +216,10 @@ h1{
     }
     
     }
-    
+    @media only screen and (min-width:300px) and (max-width:800px){
+        .images img{
+            flex-direction: column;
+            height: 200px;
+            width: 200px;
+        }
+    }
