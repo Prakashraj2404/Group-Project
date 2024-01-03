@@ -122,7 +122,6 @@ h1{
 
 }
 
-
 /* ------------ Footer Section -------------- */
 
 .footer_overall{
@@ -132,27 +131,16 @@ h1{
     min-height:80vh;
     margin-top: 100px;   
 }
-<<<<<<< HEAD
 
 .footer_container{
-=======
-.containers{
->>>>>>> 9195ddaa581b04cfccbd45598a8c8c3b63797440
     width:100%;
     display: flex;
     justify-content:space-between;
     justify-content: space-evenly;
     padding:50px;   
 }
-<<<<<<< HEAD
 
 .footer_container .left a{
-=======
-/* .container .left{
-    width:30%;
-} */
-.containers .left a{
->>>>>>> 9195ddaa581b04cfccbd45598a8c8c3b63797440
     text-align: center;
     display: block;
     line-height: 40px;
@@ -164,21 +152,8 @@ h1{
 .left a:hover{
     color:#fe21a2;
 }
-<<<<<<< HEAD
 
 .footer_container .right a{
-=======
-.left a:active{
-    color:rgb(48, 209, 48);
-}
-/* .container .center{
-    width:30%;
-} */
-/* .container .right{
-    width:30%;
-} */
-.containers .right a{
->>>>>>> 9195ddaa581b04cfccbd45598a8c8c3b63797440
     text-align: center;
     display: block;
     line-height: 40px;
@@ -190,15 +165,8 @@ h1{
 .right a:hover{
     color:#fe21a2;
 }
-<<<<<<< HEAD
 
 .footer_container .center{
-=======
-.right a:active{
-    color:rgb(22, 189, 22);
-}
-.containers .center{
->>>>>>> 9195ddaa581b04cfccbd45598a8c8c3b63797440
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -218,7 +186,6 @@ h1{
     padding:5px;
 }
 
-<<<<<<< HEAD
 .mail input:focus{
     box-shadow: 0px 0px 3px #fe21a2,
     0px 0px 20px #fe21a2,
@@ -226,9 +193,6 @@ h1{
 }
 
 .footer_container .center h1{
-=======
-.containers .center h1{
->>>>>>> 9195ddaa581b04cfccbd45598a8c8c3b63797440
     color:#0cb37b;
     letter-spacing: 1px;
     font-family: 'Beau Rivage', cursive;
@@ -278,11 +242,7 @@ h1{
 
 @media only screen and (min-width:300px) and (max-width:800px){
 
-<<<<<<< HEAD
     .footer_overall .footer_container{
-=======
-    .footer_overall .containers{
->>>>>>> 9195ddaa581b04cfccbd45598a8c8c3b63797440
     
             flex-direction: column;
         }
@@ -298,13 +258,21 @@ h1{
     
     }
 
-
     
 @media only screen and (min-width:300px) and (max-width:800px){
     .images img{
         flex-direction: column;
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width:800px){
+    .images img{
+        flex-direction: column;
+        /* height: 450px; */
+        width: 450px;
     }
 
 }

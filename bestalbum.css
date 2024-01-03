@@ -230,6 +230,7 @@ h1{
     color:aqua;
 }
 
+
 /* ------------- Responsive code for footer -------------- */
 
 
@@ -255,7 +256,16 @@ h1{
 @media only screen and (min-width:300px) and (max-width:800px){
         .images img{
             flex-direction: column;
-            height: 200px;
-            width: 200px;
+            height: 300px;
+            width: 280px;
         }
+    }
+
+    @media only screen and (min-width:500px) and (max-width:800px){
+        .images img{
+            flex-direction: column;
+            /* height: 450px; */
+            width: 450px;
+        }
+
     }
