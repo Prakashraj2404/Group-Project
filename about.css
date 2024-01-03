@@ -17,11 +17,9 @@ min-height: 100vh;
 background-color: var(--black);
 overflow: hidden;
 }
-/* .nav{
-    position: fixed;
-} */
+
 .image img {
-    /* background-image: url(./aboutimages/lens-490806_1280.webp); */
+    
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -29,7 +27,7 @@ overflow: hidden;
 }
 .image h1{
     position: absolute;
-    /* width: 480px; */
+    
     top: 45%;
     left: 42%;
     
@@ -38,12 +36,10 @@ overflow: hidden;
     font-weight: bolder;
     
     
-    /* animation: about 2s ease-in-out; */
+    
     
 }
-/* .image span{
-    color: #B31312;
-} */
+
 video{
     width: 60%;
     height: 30%;
@@ -51,19 +47,10 @@ video{
     margin-top: 100px;
     border: 5px solid var(--red);
     border-radius: 15px;
-    /* padding: 10px 10px; */
+    
     animation: video 2s ease-in-out;
 }
-/* @keyframes about{
-    0%{
-        transform: translatey(-100%);
-        color: var(--red);
-    }
-    100%{
-        transform: translatey(0%);
-        color: var(--red);
-    }
-} */
+
 @keyframes video{
     0%{
         transform: translateX(-100%);
@@ -85,16 +72,16 @@ video{
     margin-left: 100px;
     padding: 30px 30px;
     margin: auto;
-    /* border: 15px solid var(--dark); */
+    
     border-radius: 10px;
     margin-top: 20px;
-    /* grid-template-columns: auto auto; */
+    
 }
 .box img{
     width: 350px;
     height: 500px;
     object-fit: cover;
-    /* margin-left: 250px; */
+    
     animation: img 2s ease-in-out;
     border-radius: 15px;
     border: 2px solid var(--black);
@@ -112,7 +99,7 @@ video{
 #navbarNavDropdown{
     animation-name: shri;
     animation-duration: 1.2s;
-    /* transition: all 1s; */
+    
 }
 @keyframes shri{
     from{
@@ -128,13 +115,13 @@ video{
 .overall div:nth-child(5){
     width: 100%;
     height: 25%;
-    /* background-color: var(--red); */
+    
     padding: 20px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    /* border: 15px solid var(--dark); */
+    
     border-radius: 10px;
     
 }
@@ -159,7 +146,7 @@ section h1{
 section h1:hover{
     display:block;
     color: var(--black);
-    /* transform: scale(1.1); */
+    
  
 }
 div section:first-child{
@@ -169,16 +156,14 @@ div section:first-child{
 .overall div:nth-child(6){
     background-color: var(--red);
     width: 80%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
     margin-left: 100px;
     padding: 30px 30px;
     margin: auto;
-    /* border: 15px solid var(--dark); */
+    
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -186,14 +171,13 @@ div section:first-child{
     width: 100%;
     height: 500px;
     object-fit: cover;
-    /* margin-left: 250px; */
+    
     animation: img 2s ease-in-out;
     border-radius: 15px;
     border: 2px solid var(--black);
 }
 .team div p{
-    /* width: 40%;
-    height: 500px; */
+    
     color: var(--white);
     text-align: center;
     
@@ -240,8 +224,7 @@ div section:nth-child(3){
     }
 }
 .box p{
-    /* width: 40%;
-    height: 500px; */
+    
     color: var(--white);
     
 }
@@ -272,23 +255,22 @@ div section:nth-child(3){
     margin-left: 100px;
     padding: 30px 30px;
     margin: auto;
-    /* border: 15px solid var(--dark); */
+    
     border-radius: 10px;
     margin-top: 20px;
-    /* grid-template-columns: auto auto; */
+   
 }
 .camera img{
     width: 350px;
     height: 500px;
     object-fit: cover;
-    /* margin-left: 250px; */
+    
     animation: img 2s ease-in-out;
     border-radius: 15px;
     border: 2px solid var(--black);
 }
 .camera p{
-    /* width: 40%;
-    height: 500px; */
+    
     color: var(--white);
     
 }
@@ -309,23 +291,22 @@ div section:nth-child(3){
     margin-left: 100px;
     padding: 30px 30px;
     margin: auto;
-    /* border: 15px solid var(--dark); */
+    
     border-radius: 10px;
     margin-top: 20px;
-    /* grid-template-columns: auto auto; */
+   
 }
 .drone img{
     width: 350px;
     height: 500px;
     object-fit: cover;
-    /* margin-left: 250px; */
+    
     animation: img 2s ease-in-out;
     border-radius: 15px;
     border: 2px solid var(--black);
 }
 .drone p{
-    /* width: 40%;
-    height: 500px; */
+    
     color: var(--white);
     
 }
@@ -349,7 +330,7 @@ div section:nth-child(3){
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin: 2% 2%; */
+    
 }
 .overall div:nth-child(9) div:first-child{
     width: 30%;
@@ -372,16 +353,16 @@ div section:nth-child(3){
 }
 .overall div:nth-child(9) :first-child img{
     width: 80%;
-    /* object-fit: cover; */
+    
 }
 .overall div:nth-child(9) :first-child h2{
     color: var(--white);
     margin-top: 1%;
 }
 .overall div:nth-child(9) :first-child p{
-    /* width: 25%; */
+    
     text-align: center;
-    /* display: none; */
+   
 }
 
 .overall div:nth-child(9) :first-child img:hover{
@@ -413,16 +394,16 @@ object-fit: cover;
 }
 .overall div:nth-child(9) :nth-child(2) img{
     width: 80%;
-    /* object-fit: cover; */
+   
 }
 .overall div:nth-child(9) :nth-child(2) h2{
     color: var(--white);
     margin-top: 1%;
 }
 .overall div:nth-child(9) :nth-child(2) p{
-    /* width: 25%; */
+   
     text-align: center;
-    /* display: none; */
+    
 }
 
 .overall div:nth-child(9) :nth-child(2) img:hover{
@@ -453,16 +434,16 @@ object-fit: cover;
 }
 .overall div:nth-child(9) :nth-child(3) img{
     width: 80%;
-    /* object-fit: cover; */
+    
 }
 .overall div:nth-child(9) :nth-child(3) h2{
     color: var(--white);
     margin-top: 1%;
 }
 .overall div:nth-child(9) :nth-child(3) p{
-    /* width: 25%; */
+    
     text-align: center;
-    /* display: none; */
+    
 }
 
 .overall div:nth-child(9) :nth-child(3) img:hover{
@@ -497,16 +478,16 @@ object-fit: cover;
 }
 .overall div:nth-child(10) :first-child img{
     width: 80%;
-    /* object-fit: cover; */
+    
 }
 .overall div:nth-child(10) :first-child h2{
     color: var(--white);
     margin-top: 1%;
 }
 .overall div:nth-child(10) :first-child p{
-    /* width: 25%; */
+    
     text-align: center;
-    /* display: none; */
+    
 }
 
 .overall div:nth-child(10) :first-child img:hover{
@@ -536,16 +517,16 @@ object-fit: cover;
 }
 .overall div:nth-child(10) :nth-child(2) img{
     width: 80%;
-    /* object-fit: cover; */
+    
 }
 .overall div:nth-child(10) :nth-child(2) h2{
     color: var(--white);
     margin-top: 1%;
 }
 .overall div:nth-child(10) :nth-child(2) p{
-    /* width: 25%; */
+    
     text-align: center;
-    /* display: none; */
+    
 }
 
 .overall div:nth-child(10) :nth-child(2) img:hover{
@@ -575,16 +556,16 @@ object-fit: cover;
 }
 .overall div:nth-child(10) :nth-child(3) img{
     width: 80%;
-    /* object-fit: cover; */
+    
 }
 .overall div:nth-child(10) :nth-child(3) h2{
     color: var(--white);
     margin-top: 1%;
 }
 .overall div:nth-child(10) :nth-child(3) p{
-    /* width: 25%; */
+    
     text-align: center;
-    /* display: none; */
+    
 }
 
 .overall div:nth-child(10) :nth-child(3) img:hover{
@@ -638,12 +619,7 @@ object-fit: cover;
 .overall div:nth-child(12) div:nth-child(1){
     width: 70%;
 }
-/* .overall div:nth-child(12) div:nth-child(1) p{
-    font-weight: bolder;
-    font-size: larger;
-    margin-left: 10px;
-    color: var(--red);
-} */
+
 .overall div:nth-child(12) div:nth-child(1) h1{
     border-bottom: 3px solid var(--dark);
 }
@@ -811,8 +787,7 @@ footer .col2 p:hover{
      .box div:last-child{
         margin-top: 10px;
         width: 100%;
-        /* line-height: 30px; */
-        /* animation: con 2s ease-in-out; */
+        
     }
     .overall div:nth-child(5){
         display: grid;
