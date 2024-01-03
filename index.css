@@ -15,14 +15,14 @@
     width: 6px;
 }
 
-                            /* Track */
+/* Track */
 ::-webkit-scrollbar-track {
-     background:#F5F5F5; 
+    background: #F5F5F5;
 }
 
-                            /* Handle */
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background:linear-gradient(75deg,yellow,red);
+    background: linear-gradient(75deg, yellow, red);
 }
 
 .photoalbums article button {
@@ -42,6 +42,29 @@
 
 .navbar {
     border-bottom: 1px solid black !important;
+}
+.navbar{
+    background-color: rgb(188, 12, 12);
+    padding: 7px;
+}
+.nav-link{
+    font-weight: bolder;
+}
+.nav-link:hover{
+    color: white !important;
+}
+#navbarNavDropdown{
+    animation-name: shri;
+    animation-duration: 1.2s;
+    /* transition: all 1s; */
+}
+@keyframes shri{
+    from{
+        transform: translateY(55%)
+    }
+    to{
+        transform: translateY(0px)
+    }
 }
 
 .carouselimg {
@@ -612,65 +635,127 @@
     font-style: italic;
 }
 
-footer {
-    background-color: rgb(28, 29, 29);
-    color: white;
+.footer_overall {
+    background-color: rgb(15, 15, 15);
+    border: 1px solid grey;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 100px;
+
+}
+
+.containerfoot {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 50px;
+
 }
 
-footer span {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.containerfoot .left a {
+    text-align: center;
     display: block;
-    padding: 20px;
-    letter-spacing: 2px;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(180, 171, 171);
 }
 
-footer div {
-    padding: 20px;
+.left a:hover {
+    color: #fe21a2;
+}
+
+.left a:active {
+    color: green;
+}
+
+.containerfoot .right a {
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(180, 171, 171);
+}
+
+.right a:hover {
+    color: #fe21a2;
+}
+
+.right a:active {
+    color: green;
+}
+
+.containerfoot .center {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-.footimg {
-    height: 100px;
-    width: 400px;
+.center h5 {
+    color: rgb(180, 171, 171);
+    margin: 20px 0px;
 }
 
-.signup {
-    width: 80%;
-    border: 1px solid white;
+.center .mail {
+    margin: 20px 0px;
     display: flex;
-    margin: 20px 30px;
-    padding: 0;
+    justify-content: center;
+}
+
+.mail input {
+    padding: 5px;
+}
+
+.containerfoot .center h1 {
+    color: #0cb37b;
+    letter-spacing: 1px;
+    font-family: 'Beau Rivage', cursive;
 
 }
 
-.signup input {
-    width: 70%;
-    padding: 10px;
-    background-color: transparent;
-    color: white;
+.bottom {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    border: 1px solid grey;
+    gap: 30%;
+    justify-content: center;
 }
 
-.signup input:focus {
-    outline: none;
+.bottom .broken {
+    color: gold;
 }
 
-.signup button {
-    width: 30%;
-    padding: 10px;
-    color: white;
-    background-color: transparent;
-    border: none;
+.bottom span {
+    color: rgb(180, 171, 171)
 }
 
-.icons {
-    margin: 25px 40px;
+.fa-facebook,
+.fa-instagram,
+.fa-youtube,
+.fa-twitter {
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.icons i {
-    padding: 15px;
+.fa-facebook {
+    color: blue;
 }
+
+.fa-instagram {
+    color: #fe21a2;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-twitter {
+    color: aqua;
+}
+
 
 
 
@@ -689,24 +774,21 @@ footer div {
         padding: 20px;
     }
 
-}
+    .footer_overall .containerfoot {
 
-@media screen and (max-width:900px) {
-    footer {
         flex-direction: column;
     }
 
-    .footimg {
-        width: 280px;
+    .center h1 {
+        margin-top: 20px;
     }
 
-    .icons {
-        margin: 25px 0;
+    .bottom {
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
     }
 
-    .icons i {
-        padding: 15px 5px;
-    }
 }
 
 

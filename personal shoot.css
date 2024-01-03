@@ -1,23 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 .overall{
-    min-height: 100vh;
     width: 100%;
-    background-color: black;
-    background: linear-gradient(-45deg,#d3eb4b,rgb(82, 233, 82),rgb(233, 165, 38),violet;);
-    background-size:400% 400%;
-    
+    background-color: rgb(255, 255, 255);
+    /* background: linear-gradient(-45deg,#d3eb4b,rgb(167, 211, 167),rgb(248, 187, 74),rgb(196, 100, 196)); */
+    /* background-size:400%; */
+    /* animation:gradient 15s ease infinite; */
+    min-height: 100vh;
 }
 
+.nav-item a
+{
+  text-transform: uppercase;
+}
+
+.navbar
+{
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-brand img
+{
+  width: 150px;
+}
+/* 
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+} */
+
 h1{
-    background-color: aqua;
-    color: chocolate;
+    /* margin: 20px; */
+    background-color:transparent;
     font-size:40px;
-    font-family: 'Nosifer', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: -2px -2px 5px black;
     font-weight:bolder;
     text-align: center;
+    top: 200px;
 }
+
+.images{
+    width: 100%;
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap:wrap;   
+    /* align-items: center; */
+}
+
+.firstimg{
+    height: 500px;
+    width: 90%;
+
+}
+
+.images img{
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow:-2.5px -2.5px 2.5px black;
+
+}
+
+.images :hover{
+    /* box-shadow: 0 0.5 0.5 -0.4 yellow; */
+    transform: translateY(0.25em);
+    transform: translateY(-0.25em);
+    box-shadow:10px 10px 5px black;
+    cursor: pointer;
+
+}
+
+
+
+.footer_overall{
+    background-color: rgb(15,15,15);
+    border: 1px solid white;
+    width:100%;
+    min-height:80vh;
+    margin-top: 100px;
+    
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    /* justify-content: space-evenly; */
+    padding:50px;
+    
+}
+/* .container .left{
+    width:30%;
+} */
+.container .left a{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color:rgb(180, 171, 171);
+}
+.left a:hover{
+    color:white;
+}
+.left a:active{
+    color:rgb(48, 209, 48);
+}
+/* .container .center{
+    width:30%;
+} */
+/* .container .right{
+    width:30%;
+} */
+.container .right a{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(180, 171, 171);
+}
+.right a:hover{
+    color:white;
+}
+.right a:active{
+    color:rgb(22, 189, 22);
+}
+.container .center{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+}
+.center h5{
+    color:rgb(180, 171, 171);
+    margin:20px 0px;
+}
+.center .mail{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.mail input{
+    padding:5px;
+}
+
+.container .center h1{
+    color:#0cb37b;
+    letter-spacing: 1px;
+    font-family: 'Beau Rivage', cursive;
+    
+}
+.bottom{
+    padding:30px;
+    width:100%;
+    display: flex;
+    border:1px solid grey;
+    gap:30%;
+    justify-content:center;  
+}
+.bottom .broken{
+    color:gold;
+}
+.bottom span{
+    color:rgb(180, 171, 171)
+}
+.fa-facebook,.fa-instagram,.fa-youtube,.fa-twitter{
+    font-size: 25px;
+    margin-right:10px;
+    cursor: pointer;
+}
+.fa-facebook{
+    color:blue;
+}
+.fa-instagram{
+    color:#fe21a2;
+}
+.fa-youtube{
+    color:red;
+}
+.fa-twitter{
+    color:aqua;
+}
+
+@media only screen and (min-width:300px) and (max-width:800px){
+
+    .footer_overall .container{
+    
+            flex-direction: column;
+        }
+        .center h1{
+            margin-top: 20px;
+        }
+    
+    .bottom{
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
+    
+    }
+    
+
+    @media only screen and (min-width:300px) and (max-width:800px){
+        .images img{
+            flex-direction: column;
+            height: 200px;
+            width: 200px;
+        }
+
+    }
