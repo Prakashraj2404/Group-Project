@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:900px) {
+    .containerbody2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .photocon{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photocontent{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .projectcontent{
+        padding-left: 30px;
+    }
+    div[title="photos"]{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div[title="photos"] img{
+        width: 90%;
+    }
+    .phra1{
+        width: 90%;
+    }
+    div[title="review"]{
+        padding: 40px 20px 0px;
+    }
+    .review{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .review-details{
+        width: 320px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div img{
+        width: 300px;
+    }
+    .icons{
+        margin: 25px 0px;
+        padding: 10px;
+    }
+    .icons i{
+        padding: 7px;
+    }
+    footer div h4{
+        margin: 20px;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1300px){
+    .containerbody2{
+        flex-direction: column;
+    }
+    .review{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .review-details{
+        width: 320px;
+    }
+    .photocon{
+        width: 100%;
+    }
+}
