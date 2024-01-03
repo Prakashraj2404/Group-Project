@@ -68,7 +68,7 @@
 } */
 
 h1{
-    padding-top: 11%;
+    /* padding-top: 11%; */
 
     /* margin: 20px; */
     background-color:transparent;
@@ -126,7 +126,7 @@ h1{
     display: flex;
     justify-content:space-between;
     /* justify-content: space-evenly; */
-    padding:50px;
+    padding:15px;
     
 }
 /* .container .left{
@@ -247,7 +247,5 @@ h1{
         height: 200px;
         width: 200px;
     }
-    h1{
-        padding-top: 50%;
-    }
+
 }
