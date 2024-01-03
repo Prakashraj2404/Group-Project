@@ -269,3 +269,117 @@ footer div{
 .icons i{
     padding: 15px;
 }
+/* ------------ Footer Section -------------- */
+
+.footer_overall{
+    background-color: rgb(15,15,15);
+    border: 1px solid grey;
+    width:100%;
+    min-height:80vh;
+    margin-top: 100px;   
+}
+
+.footer_container{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    justify-content: space-evenly;
+    padding:50px;   
+}
+
+.footer_container .left a{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color:rgb(180, 171, 171);
+}
+
+.left a:hover{
+    color:#fe21a2;
+}
+
+.footer_container .right a{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(180, 171, 171);
+}
+
+.right a:hover{
+    color:#fe21a2;
+}
+
+.footer_container .center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center h5{
+    color:rgb(180, 171, 171);
+    margin:20px 0px;
+}
+
+.center .mail{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.mail input{
+    padding:5px;
+}
+
+.mail input:focus{
+    box-shadow: 0px 0px 3px #fe21a2,
+    0px 0px 20px #fe21a2,
+    0px 0px 70px #fe21a2;
+}
+
+.footer_container .center h1{
+    color:#0cb37b;
+    letter-spacing: 1px;
+    font-family: 'Beau Rivage', cursive;
+}
+
+.bottom{
+    padding:30px;
+    width:100%;
+    display: flex;
+    border:1px solid grey;
+    gap:30%;
+    justify-content:center;  
+}
+
+.bottom .broken{
+    color:gold;
+}
+
+.bottom span{
+    color:rgb(180, 171, 171)
+}
+
+.fa-facebook,.fa-instagram,.fa-youtube,.fa-twitter{
+    font-size: 25px;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.fa-facebook{
+    color:blue;
+}
+
+.fa-instagram{
+    color:#fe21a2;
+}
+
+.fa-youtube{
+    color:red;
+}
+
+.fa-twitter{
+    color:aqua;
+}
