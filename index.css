@@ -33,34 +33,34 @@
     font-size: small;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid black !important;
+}
 
 .nav-item a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px !important;
+    display: inline-block;
 }
 
-.navbar {
-    border-bottom: 1px solid black !important;
-}
-.navbar{
-    background-color: rgb(188, 12, 12);
-    padding: 7px;
-}
 .nav-link{
-    font-weight: bolder;
+    font-weight: bold;
 }
 .nav-link:hover{
-    color: white !important;
+    color: red !important;
 }
+
 #navbarNavDropdown{
     animation-name: shri;
     animation-duration: 1.2s;
-    /* transition: all 1s; */
 }
 @keyframes shri{
     from{
-        transform: translateY(55%)
+        transform: translateX(100%)
     }
     to{
         transform: translateY(0px)
@@ -320,12 +320,6 @@
 .aboutagency section:nth-child(3) div:first-child img {
     width: 100%;
 
-}
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
 }
 
 .agency div {
@@ -662,7 +656,7 @@
 }
 
 .left a:hover {
-    color: #fe21a2;
+    color: red;
 }
 
 .left a:active {
@@ -679,7 +673,7 @@
 }
 
 .right a:hover {
-    color: #fe21a2;
+    color: red;
 }
 
 .right a:active {
@@ -741,11 +735,11 @@
 }
 
 .fa-facebook {
-    color: blue;
+    color: rgb(54, 54, 254);
 }
 
 .fa-instagram {
-    color: #fe21a2;
+    color: #ff7300;
 }
 
 .fa-youtube {
@@ -762,6 +756,10 @@
 @media screen and (max-width:750px) {
     .memories {
         gap: 50px;
+    }
+
+    .covered{
+        height: 50vh;
     }
 }
 
