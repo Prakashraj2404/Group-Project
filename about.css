@@ -639,6 +639,7 @@ footer{
     bottom:0;
     left:0;
     background-color: var(--red);
+    color:var(--white);
     width: 100%;
     padding:50px 20px;
     margin-top: 20px;
@@ -659,7 +660,8 @@ footer{
 }
 
     footer>.row1{
-        flex-direction: column;        
+        flex-direction: column;
+        color: var(--white);        
     }
     footer>.row1 .col2{
         gap:30px;
@@ -723,7 +725,7 @@ footer>.row1 .col2{
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 }
 footer{
-    color:var(--txt-color);
+    /* color:var(--txt-color); */
 }
 /* heading */
 footer .col2 h3{
