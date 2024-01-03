@@ -17,7 +17,20 @@ min-height: 100vh;
 background-color: var(--black);
 overflow: hidden;
 }
+.image{
+    animation: i 2s ease-in-out; ;
+}
+@keyframes i {
+    0%{
+        transform: translateY(-100%);
+        
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
 
+}
 .image img {
     
     width: 100%;
